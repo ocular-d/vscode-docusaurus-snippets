@@ -1,0 +1,61 @@
+{
+    "Docusaurus Page": {
+        "prefix": "!!page",
+        "scope": "markdown,mdx",
+        "body": [
+          "---",
+          "sidebar_position: ${1:sidebar-position}",
+          "id: ${2:page-id}",
+          "title: ${3:title}",
+          "description: ${4:description}",
+          "tags:",
+          "  - ${5|Editorial,Markdown,OpenAPI|}",
+          "  - Style Guide",
+          "---",
+          "",
+          "import TLDR from \"@site/src/components/TLDR\";",
+          "import SuccessBox from \"@site/src/components/SuccessBox\";",
+          "import Tabs from '@theme/Tabs';",
+          "import TabItem from '@theme/TabItem';",
+          "",
+          "<TLDR>",
+          "",
+          "${6:intro}.",
+          "",
+          "</TLDR>",
+          "",
+          "---"
+        ],
+        "description": "Docusaurus Page"
+      },
+      "Docusaurus Blog": {
+        "prefix": "!!blog",
+        "scope": "markdown,mdx",
+        "body": [
+          "---",
+          "slug: ${1:slug}",
+          "title: ${2:title}",
+          "authors: [svx]",
+          "date: $CURRENT_YEAR-$CURRENT_MONTH-$CURRENT_DATE",
+          "description: ${3:description}",
+          "tags:",
+          "  - ${4:tag1}",
+          "  - ${5:tag2}",
+          "---",
+          "",
+          "import TLDR from \"@site/src/components/TLDR\";",
+          "import SuccessBox from \"@site/src/components/SuccessBox\";",
+          "import Tabs from '@theme/Tabs';",
+          "import TabItem from '@theme/TabItem';",
+          "",
+          "<TLDR>",
+          "",
+          "${6:intro}",
+          "",
+          "</TLDR>",
+          "",
+          "---"
+        ],
+        "description": "Docusaurus Blog"
+      }
+}
